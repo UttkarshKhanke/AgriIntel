@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score
 import joblib
 
 # Load dataset
-data = pd.read_csv("data/Crop_recommendation.csv")
+data = pd.read_csv("datasets/Crop_recommendation.csv")
 
 # Features and labels
 X = data.drop("label", axis=1)
