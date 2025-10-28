@@ -5,7 +5,7 @@ import pandas as pd
 # Paths (models and datasets are in same directory as this file)
 BASE_DIR = os.path.dirname(__file__)
 MODEL_PATH = os.path.join(BASE_DIR, "models", "water_fertilizer_model.pkl")
-DATA_PATH = os.path.join(BASE_DIR, "datasets", "crop_water_fertilizer_plan.csv")
+DATA_PATH = os.path.join(BASE_DIR, "datasets", "crop_water_fertilizer_plan.csv")  # updated CSV
 
 # --- Load ML model and encoders ---
 with open(MODEL_PATH, "rb") as f:
@@ -41,7 +41,7 @@ def get_water_fertilizer_plan(crop_name: str, soil_N: int, soil_P: int, soil_K: 
     # Encode crop for model
     crop_encoded = crop_encoder.transform([crop_name])[0]
 
-    # Predict irrigation type using all 5 features
+    # Predict irrigation type using all 5 features (crop + N + P + K + pH)
     irrigation_pred_encoded = model.predict([[crop_encoded, soil_N, soil_P, soil_K, ph]])[0]
     irrigation_type = irrigation_encoder.inverse_transform([irrigation_pred_encoded])[0]
 
@@ -51,14 +51,14 @@ def get_water_fertilizer_plan(crop_name: str, soil_N: int, soil_P: int, soil_K: 
         "soil_NPK": {"N": soil_N, "P": soil_P, "K": soil_K},
         "nutrient_gaps": {"N": gap_N, "P": gap_P, "K": gap_K},
         "irrigation": irrigation_type,
-        "notes": crop_row["Notes"]
+        "notes": crop_row["Notes"],
+        "ph": ph
     }
 
     return plan
 
 
-
 # --- Quick test ---
 if __name__ == "__main__":
-    sample_plan = get_water_fertilizer_plan("Rice", soil_N=30, soil_P=20, soil_K=25)
+    sample_plan = get_water_fertilizer_plan("Rice", soil_N=30, soil_P=20, soil_K=25, ph=6.5)
     print(sample_plan)
