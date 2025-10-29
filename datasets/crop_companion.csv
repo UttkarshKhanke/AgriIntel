@@ -1,47 +1,80 @@
 Crop;Companions;Notes
+Apple;Chives,Garlic,Marigold;Garlic repels borers, marigold deters nematodes, chives improve apple flavor
+Arecanut;Black Pepper,Turmeric,Ginger;Pepper and turmeric thrive under shade and improve soil health
+Bajra;Cowpea,Groundnut,Pigeonpeas;Cowpea fixes nitrogen, pigeonpeas improve soil structure
+Barley;Peas,Mustard,Flax;Peas fix nitrogen, mustard repels pests, flax improves soil texture
+Banana;Legumes,Ginger,Turmeric;Legumes fix nitrogen, ginger and turmeric suppress weeds
+Beans;Corn,Radish,Carrot;Corn provides support, radish loosens soil, carrot improves aeration
+Beets;Onion,Cabbage,Lettuce;Onion deters pests, lettuce provides shade, cabbage adds organic matter
+Borage;Tomato,Strawberry,Cabbage;Attracts pollinators, repels tomato hornworm
+Basil;Tomato,Peppers,Oregano;Improves tomato flavor, repels insects
+Blackgram;Maize,Sesamum,Sorghum;Provides nitrogen, sesamum acts as trap crop
+Cashewnut;Pineapple,Ginger,Turmeric;Pineapple acts as ground cover, ginger improves soil health
+Cabbage;Onion,Dill,Beets;Onion deters caterpillars, dill attracts predatory insects
+Carrot;Onion,Leek,Peas;Onion deters carrot fly, peas add nitrogen
+Cardamom;Arecanut,Coffee,Ginger;Grows well under shade of arecanut and coffee
+Castor Seed;Cotton,Turmeric,Soyabean;Acts as pest repellent and provides shade
+Celery;Leek,Onion,Tomato;Leek deters pests, tomato improves soil microbe activity
+Chickpea;Mustard,Linseed,Barley;Mustard acts as trap crop, linseed improves soil aeration
+Coffee;Banana,Cardamom,Black Pepper;Banana provides shade, pepper improves yield sustainability
+Coconut;Pineapple,Banana,Turmeric;Pineapple acts as cover crop, banana supports microclimate
+Coriander;Spinach,Onion,Carrot;Repels aphids, improves soil fertility
+Corn;Beans,Pumpkin,Cucumber;Beans fix nitrogen, pumpkin acts as ground cover
+Cotton;Castor,Maize,Sunflower;Castor repels pests, maize provides wind protection
+Cowpea;Maize,Sorghum,Millet;Improves soil fertility and provides ground cover
+Cucumber;Corn,Radish,Beans;Beans fix nitrogen, radish loosens soil
+Dill;Cabbage,Onion,Lettuce;Attracts beneficial insects and improves pollination
+Dry Chillies;Onion,Garlic,Marigold;Onion and garlic repel pests, marigold deters nematodes
+Garlic;Beets,Tomato,Carrot;Repels aphids and other insects
+Ginger;Turmeric,Arecanut,Coconut;Grows well under partial shade and improves soil structure
+Groundnut;Bajra,Maize,Cotton;Improves soil nitrogen, supports intercropping
+Grapes;Beans,Peas,Strawberry;Legumes fix nitrogen, strawberry attracts pollinators
+Guar seed;Bajra,Cotton,Sorghum;Improves soil nitrogen and moisture retention
+Horsegram;Ragi,Groundnut,Sesamum;Improves soil fertility and suppresses weeds
+Jowar;Pigeonpeas,Cowpea,Castor;Legumes fix nitrogen, castor acts as pest repellent
+Jute;Rice,Maize,Urad;Improves soil aeration and organic content
+Kidneybeans;Corn,Carrot,Beetroot;Corn provides support, carrots improve soil structure
+Khesari;Wheat,Mustard,Gram;Fixes nitrogen and improves soil fertility
+Linseed;Mustard,Chickpea,Wheat;Improves soil texture and pest control
+Leek;Carrot,Onion,Celery;Repels carrot flies and improves soil health
+Lettuce;Carrot,Beets,Radish;Provides ground cover and retains soil moisture
+Lentil;Mustard,Linseed,Barley;Fixes nitrogen and enhances soil fertility
+Mango;Turmeric,Ginger,Legumes;Underplanting with legumes improves soil fertility
+Maize;Beans,Pumpkin,Melon;Beans fix nitrogen, pumpkin provides mulch
+Masoor;Mustard,Barley,Linseed;Improves soil fertility and structure
+Melon;Corn,Sunflower,Beans;Sunflower attracts pollinators, beans add nitrogen
+Mesta;Rice,Jute,Groundnut;Improves soil texture and water retention
+Mungbean;Maize,Sesamum,Sorghum;Improves soil nitrogen, sesamum acts as pest barrier
+Muskmelon;Corn,Sunflower,Radish;Sunflower attracts bees, radish improves soil aeration
+Mothbeans;Bajra,Sorghum,Groundnut;Improves soil nitrogen and reduces erosion
+Mustard;Wheat,Gram,Lentil;Acts as trap crop and pest deterrent
+Niger seed;Millet,Sorghum,Groundnut;Improves biodiversity and soil fertility
+Onion;Carrot,Beets,Lettuce;Carrot deters onion fly, lettuce provides shade
+Orange;Lemon,Marigold,Beans;Marigold repels nematodes, beans fix nitrogen
+Papaya;Turmeric,Ginger,Cowpea;Legumes improve fertility, turmeric repels pests
+Pepper;Arecanut,Coffee,Coconut;Thrives under shade and improves biodiversity
+Pigeonpeas;Jowar,Maize,Millet;Improves soil fertility and prevents erosion
+Potato;Beans,Cabbage,Marigold;Beans fix nitrogen, marigold repels nematodes
+Pumpkin;Maize,Beans,Sunflower;Acts as ground cover and attracts pollinators
+Pomegranate;Beans,Marigold,Onion;Beans fix nitrogen, marigold repels pests
+Radish;Carrot,Spinach,Peas;Loosens soil and promotes root growth
+Ragi;Pigeonpeas,Cowpea,Groundnut;Improves soil fertility and erosion control
 Rice;Onion,Spinach,Basil;Onion repels pests, spinach enriches soil, basil improves resilience
-Wheat;Peas,Beans,Mustard;Legumes fix nitrogen, mustard repels insects
-Maize;Beans,Squash,Cucumber;Traditional "Three Sisters", beans fix N, squash suppresses weeds
-Chickpea;Mustard,Barley;Mustard controls pests, barley provides shade
-Kidneybeans;Corn,Potato;Corn supports beans, potatoes improve soil aeration
-Pigeonpeas;Sorghum,Millet;Sorghum provides shade, millet improves soil binding
-Mothbeans;Pearl Millet,Sesame;Good for drylands, millet provides cover, sesame improves yield
-Mungbean;Rice,Wheat;Improves soil fertility in rotation with cereals
-Blackgram;Sorghum,Maize;Legumes fix nitrogen, cereals benefit
-Lentil;Barley,Garlic;Barley provides shade, garlic repels pests
-Pomegranate;Onion,Marigold;Marigold controls nematodes, onion repels pests
-Banana;Legume Cover Crops;Legumes improve soil N, cover crops protect soil
-Mango;Turmeric,Ginger;Spices act as ground cover, repel pests
-Grapes;Garlic,Onion,Rosemary;Repel pests, enhance grapevine health
-Watermelon;Corn,Sunflower;Provide shade and trap pests
-Muskmelon;Radish,Lettuce;Radish repels pests, lettuce improves ground cover
-Apple;Garlic,Chives;Garlic and chives repel apple scab and pests
-Orange;Lemongrass,Basil;Repel citrus pests naturally
-Papaya;Legume Crops,Marigold;Legumes improve N, marigold controls nematodes
-Coconut;Pineapple,Black Pepper;Traditional intercrop system
-Cotton;Marigold,Pigeonpea;Marigold traps bollworms, pigeon pea improves soil
-Jute;Rice,Wheat;Grown in rotation with cereals
-Coffee;Banana,Silver Oak;Banana provides shade, silver oak is windbreak
-Tomato;Basil,Carrot,Onion;Classic companions to deter pests and improve taste
-Basil;Tomato,Peppers;Enhances growth and repels pests
-Carrot;Leek,Onion,Lettuce;Mutual pest protection, improves yield
-Onion;Carrot,Beet,Strawberry;Repels pests, enhances flavor
-Corn;Beans,Squash;Beans fix N, squash covers ground
-Beans;Corn,Potato;Classic nitrogen-fixing companions
-Squash;Corn,Beans;Three Sisters system
-Leek;Carrot,Celery;Repels carrot fly, celery benefits soil
-Lettuce;Carrot,Radish;Fast-growing companions
-Cabbage;Onion,Dill;Onion repels cabbage worms, dill attracts pollinators
-Dill;Cabbage,Onion;Mutual pest control
-Celery;Leek,Tomato;Repels cabbage moths
-Potato;Beans,Corn;Beans fix N, corn provides shade
-Spinach;Strawberry,Onion;Provides ground cover, onion repels pests
-Radish;Cucumber,Lettuce;Quick harvest, loosens soil
-Strawberry;Spinach,Onion;Improves yield, pest resistance
-Turnip;Peas,Spinach;Peas fix N, spinach provides cover
-Cucumber;Corn,Beans;Corn provides shade, beans enrich soil
-Pumpkin;Maize,Beans;Classic intercrop
-Beets;Onion,Lettuce;Good soil cover, pest deterrent
-Garlic;Tomato,Apple;Repels pests, improves plant immunity
-Pepper;Basil,Onion;Basil improves flavor, onion repels insects
-Borage;Tomato,Strawberry;Attracts pollinators, improves fruit yield
+Safflower;Gram,Wheat,Barley;Improves soil fertility and suppresses weeds
+Sesamum;Maize,Groundnut,Pigeonpeas;Acts as trap crop and improves biodiversity
+Soyabean;Maize,Cotton,Sorghum;Fixes nitrogen and supports soil microbes
+Sugarcane;Onion,Garlic,Peas;Legumes improve nitrogen content, garlic repels borers
+Sunflower;Maize,Soyabean,Beans;Attracts pollinators and improves yield
+Squash;Corn,Beans,Radish;Beans fix nitrogen, radish improves soil
+Spinach;Cabbage,Onion,Carrot;Improves soil organic matter and repels aphids
+Strawberry;Borage,Spinach,Beans;Borage attracts pollinators, beans fix nitrogen
+Sweet Potato;Maize,Beans,Ginger;Beans fix nitrogen, ginger prevents fungal infections
+Tapioca;Turmeric,Ginger,Cowpea;Legumes improve soil, turmeric repels pests
+Tobacco;Maize,Onion,Marigold;Marigold repels nematodes, maize provides shade
+Tomato;Basil,Marigold,Onion;Basil improves flavor, marigold repels nematodes
+Tur;Jowar,Groundnut,Cowpea;Fixes nitrogen and improves soil fertility
+Turnip;Peas,Spinach,Onion;Peas add nitrogen, spinach improves soil health
+Turmeric;Ginger,Arecanut,Coconut;Grows well under partial shade and improves soil structure
+Urad;Maize,Sorghum,Sesamum;Improves nitrogen and pest resistance
+Watermelon;Corn,Sunflower,Beans;Sunflower attracts pollinators, beans fix nitrogen
+Wheat;Mustard,Peas,Gram;Legumes fix nitrogen, mustard repels insects

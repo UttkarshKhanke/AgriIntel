@@ -1,87 +1,53 @@
+# train_water_fertilizer_model_training.py
 import pandas as pd
-import joblib
+import pickle
 import os
+from sklearn.preprocessing import LabelEncoder
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder, StandardScaler
-from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score
 
-# ===========================
 # Paths
-# ===========================
-DATA_PATH = "datasets/Crop_recommendation.csv"  # <-- must include 'Soil' column now
-MODEL_PATH = "models/crop_recommendation_model.pkl"
-
+DATA_PATH = "datasets/crop_water_fertilizer_plan.csv"
+MODEL_PATH = "models/water_fertilizer_model.pkl"
 os.makedirs("models", exist_ok=True)
 
-# ===========================
 # Load dataset
-# ===========================
-data = pd.read_csv(DATA_PATH)
+df = pd.read_csv(DATA_PATH)
 
-# Expected columns:
-# N, P, K, temperature, humidity, ph, rainfall, Soil, label
+# Encode
+crop_encoder = LabelEncoder()
+df['Crop_encoded'] = crop_encoder.fit_transform(df['Crop'])
 
-# ===========================
-# Encode Soil and Label
-# ===========================
-soil_encoder = LabelEncoder()
-data["Soil_encoded"] = soil_encoder.fit_transform(data["Soil"])
+irrigation_encoder = LabelEncoder()
+df['Irrigation_encoded'] = irrigation_encoder.fit_transform(df['Irrigation'])
 
-label_encoder = LabelEncoder()
-data["label_encoded"] = label_encoder.fit_transform(data["label"])
+notes_encoder = LabelEncoder()
+df['Notes_encoded'] = notes_encoder.fit_transform(df['Notes'])
 
-# ===========================
-# Feature selection
-# ===========================
-X = data[["N", "P", "K", "temperature", "humidity", "ph", "rainfall", "Soil_encoded"]]
-y = data["label_encoded"]
+# Features + target
+X = df[['Crop_encoded', 'N', 'P', 'K', 'pH']]
+y = df['Irrigation_encoded']
 
-# ===========================
-# Scale numerical features
-# ===========================
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X)
+# Split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
 
-# ===========================
-# Train/test split
-# ===========================
-X_train, X_test, y_train, y_test = train_test_split(
-    X_scaled, y, test_size=0.2, random_state=42, stratify=y
-)
-
-# ===========================
-# Train XGBoost model
-# ===========================
-model = XGBClassifier(
-    n_estimators=250,
-    learning_rate=0.05,
-    max_depth=6,
-    subsample=0.8,
-    colsample_bytree=0.8,
-    gamma=0.2,
-    eval_metric="mlogloss",
-    random_state=42,
-    use_label_encoder=False
-)
-
+# Train model
+from xgboost import XGBClassifier
+model = XGBClassifier(use_label_encoder=False, eval_metric='mlogloss', random_state=42)
 model.fit(X_train, y_train)
 
-# ===========================
-# Evaluate
-# ===========================
-y_pred = model.predict(X_test)
-acc = accuracy_score(y_test, y_pred)
-print(f" Model trained successfully with Soil feature. Accuracy: {acc*100:.2f}%")
+# Accuracy
+acc = accuracy_score(y_test, model.predict(X_test))
+print(f"Model trained successfully. Accuracy: {acc * 100:.2f}%")
 
-# ===========================
-# Save model + encoders
-# ===========================
-joblib.dump({
-    "model": model,
-    "scaler": scaler,
-    "label_encoder": label_encoder,
-    "soil_encoder": soil_encoder
-}, MODEL_PATH)
+# Save model and encoders
+with open(MODEL_PATH, "wb") as f:
+    pickle.dump({
+        "model": model,
+        "crop_encoder": crop_encoder,
+        "irrigation_encoder": irrigation_encoder,
+        "notes_encoder": notes_encoder
+    }, f)
 
-print(f" Model and encoders saved at: {MODEL_PATH}")
+print(f" Model saved to: {MODEL_PATH}")
